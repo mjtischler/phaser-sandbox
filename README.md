@@ -1,5 +1,5 @@
-# Collabogram
-## A game for collaboration and productivity
+# Phaser Sandbox
+## A skeleton for creating games in the Phaser-ES6-Webpack-LESS stack
 
 ### Todo
 * Add a front-end testing framework (JS)
@@ -120,8 +120,6 @@ If you're having SSH issues when cloning, execute from BASH:
 
 Copy that block from the **end of your email address** to the **first character**, ("s" in ssh-rsa) and head in your browser to:
 
-https://bitbucket.org/account/user/{{USERNAME}}/ssh-keys/
+https://github.com/settings/keys
 
-(replacing *{{USERNAME}}* with... your username)
-
-Click "Add key", enter any label, and paste that key block into the "Key" section. Select "Add key" from that modal to save the key.
+Click "New SSH key", enter any title, and paste that key block into the "Key" section. Select "Add SSH key" from that modal to save the key.
