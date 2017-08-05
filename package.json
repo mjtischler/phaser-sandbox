@@ -30,14 +30,13 @@
   },
   "scripts": {
     "dev": "webpack",
-    "deploy": "webpack --config webpack.production.config.js",
-    "test": "eslint ./src/**/**.js"
+    "deploy": "webpack --config webpack.production.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/mtischler/collabogram.git"
+    "url": "git+ssh://git@github.com:mjtischler/phaser-sandbox.git"
   },
-  "author": "Honatho Saddler (honatho.saddler@gmail.com) and Matt Tischler (mjtischler@gmail.com)",
+  "author": "Matt Tischler (mjtischler@gmail.com)",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/mtischler/collabogram#readme"
+  "homepage": "https://github.com/mjtischler/phaser-sandbox/blob/master/README.md"
 }
