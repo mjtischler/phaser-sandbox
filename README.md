@@ -58,9 +58,6 @@ When making additional commits on a branch, add your changes with `git add .` an
 
 Where `{{x}} = total number of commits on branch`
 
-**NOTE:** The number of commits is relative to any previously squashed commits. If you've already squashed 3 commits with `git rebase -i HEAD~3` and add one other commit post-squash, then you run `git rebase -i HEAD~2`. In this scenario, `~2` represents both the original commit (including squashes) and the new commit.
-
-
 Your default editor will open up and show:
 
 ```
@@ -118,6 +115,8 @@ If you haven't pushed your branch upstream:
 If you're updating a branch and you've gone through the rebase workflow, it's ok to force push to your branch *as long as a teammate isn't working directly out of it*:
 
 `git push --force origin {{BRANCH_NAME}}`
+
+**NOTE:** The number of commits is relative to any previously squashed commits. If you've already squashed 3 commits with `git rebase -i HEAD~3` and add one other commit post-squash, then you run `git rebase -i HEAD~2`. In this scenario, `~2` represents both the original commit (including squashes) and the new commit.
 
 ### Pull requests
 After your branch is ready for review, go to the root of the GitHub project and you'll see a green button: "Compare & pull request." Select it.
