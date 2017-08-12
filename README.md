@@ -1,8 +1,9 @@
 # Phaser Sandbox
-## A skeleton for creating games in the Phaser-ES6-Webpack-LESS stack
+## A skeleton for creating games in the Phaser-ES6-Webpack-LESS stack with Karma/Jasmine for testing
 
 ### Todo
-* Add a front-end testing framework (JS)
+
+- Prevent multiple Webpack servers from starting with Karma
 
 ### Installation
 *If you're having cloning issues related to SSH, see "Cloning Issues" below.*
@@ -11,19 +12,31 @@
 
 From BASH:
 
+First, install the `karma-cli` globally to make sure you have access to the Karma test runner:
+
+Then, clone the repo and install all dependencies:
+
 `git clone git@github.com:mjtischler/phaser-sandbox.git`
 
 `cd phaser-sandbox`
 
 `npm install`
 
+You can spin up the Webpack development server with:
+
 `npm run dev`
 
-To prepare a package for deployment:
+Webpack will automatically open your default browser at http://localhost:3000. Live updating is enabled, so changes to JS and LESS will be applied immediately. Warnings and errors will appear both in your terminal and in your browser console.
+
+To start up the Karma server and automatically run your tests:
+
+`karma start`
+
+**NOTE:** To ensure the proper compilation of code, run this in a separate console a few seconds *after* running `npm run dev`.
+
+#### To prepare a package for deployment:
 
 `npm run deploy`
-
-Webpack will automatically open your default browser at http://localhost:3000. Live updating is enabled, so changes to JS and LESS will be applied immediately. Warnings and errors will appear both in your terminal and in your browser console.
 
 ### Git workflow
 
