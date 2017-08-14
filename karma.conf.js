@@ -14,7 +14,9 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'assets/**/*',
+      { pattern: 'assets/**/*', included: false, watched: true, served: true },
+      { pattern: 'dist/*.js.map', included: false, watched: true, served: true },
+      { pattern: 'tests/*.js.map', included: false, watched: true, served: true },
       'dist/vendor.bundle.js',
       'dist/bundle.js',
       'tests/**/*Spec.js'
